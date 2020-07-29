@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>radarr-telegram-bot</Name>
+  <Name>Radarr Telegram Bot</Name>
   <Repository>nathanowen95/radarr-telegram-bot</Repository>
   <Registry>https://hub.docker.com/r/nathanowen95/radarr-telegram-bot/</Registry>
   <Network>bridge</Network>
