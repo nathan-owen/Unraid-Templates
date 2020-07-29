@@ -92,6 +92,11 @@
       <Name>DEFAULTS_MONITOR</Name>
       <Mode/>
     </Variable>
+    <Volume>
+      <HostDir>/mnt/user/appdata/radarr-telegram-bot</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Environment>
   <Labels/>
   <Config Name="Telegram Bot Token" Target="TELEGRAM_BOTTOKEN" Default="" Mode="" Description="Container Variable: TELEGRAM_BOTTOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
@@ -106,4 +111,5 @@
   <Config Name="Radarr Password" Target="RADARR_PASSWORD" Default="" Mode="" Description="Container Variable: RADARR_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Default Folder for Media" Target="DEFAULTS_ROOT_FOLDER" Default="" Mode="" Description="Container Variable: DEFAULTS_ROOT_FOLDER" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Default Profile ID" Target="DEFAULTS_PROFILE_ID" Default="" Mode="" Description="Container Variable: DEFAULTS_PROFILE_ID" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config Directory" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sonarr-telegram-bot</Config>
 </Container>
