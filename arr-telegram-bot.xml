@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>arr Telegram Bot</Name>
+  <Repository>nathanowen95/arr-telegram-bot</Repository>
+  <Registry>https://hub.docker.com/r/nathanowen95/arr-telegram-bot/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/nathanowen95/arr-telegram-bot/</Support>
+  <Project>https://github.com/nathan-owen/arr-Telegram-Bot</Project>
+  <Overview>Bot which lets you or others add series to Radarr and Sonarr via the messaging service Telegram. </Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/nathan-owen/Unraid-Templates/master/images/radarr-telegram-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1595969233</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Bot which lets you or others add series to Radarr and Sonarr via the messaging service Telegram. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>TELEGRAM_BOTTOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BOT_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BOT_OWNER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_APIKEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_URLBASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_SSL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RADARR_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_APIKEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_URLBASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_SSL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SONARR_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DEFAULTS_ROOT_FOLDER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DEFAULTS_PROFILE_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DEFAULTS_MONITOR</Name>
+      <Mode/>
+    </Variable>
+    <Volume>
+      <HostDir>/mnt/user/appdata/radarr-telegram-bot</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Environment>
+  <Labels/>
+  <Config Name="Telegram Bot Token" Target="TELEGRAM_BOTTOKEN" Default="" Mode="" Description="Container Variable: TELEGRAM_BOTTOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Telegram Bot Password" Target="BOT_PASSWORD" Default="" Mode="" Description="Container Variable: BOT_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Telegram Bot Owner ID" Target="BOT_OWNER" Default="" Mode="" Description="Container Variable: BOT_OWNER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Radarr URL" Target="RADARR_HOST" Default="" Mode="" Description="Container Variable: RADARR_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Radarr API KEY" Target="RADARR_APIKEY" Default="" Mode="" Description="Container Variable: RADARR_APIKEY" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Radarr Port" Target="RADARR_PORT" Default="" Mode="" Description="Container Variable: RADARR_PORT" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Radarr URL Base" Target="RADARR_URLBASE" Default="" Mode="" Description="Container Variable: RADARR_URLBASE" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Radarr SSL (http or https)" Target="RADARR_SSL" Default="true" Mode="" Description="Leave blank if not using https, otherwise put true" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Radarr Username" Target="RADARR_USERNAME" Default="" Mode="" Description="Container Variable: RADARR_USERNAME" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Radarr Password" Target="RADARR_PASSWORD" Default="" Mode="" Description="Container Variable: RADARR_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
+   <Config Name="Sonarr URL" Target="SONARR_HOST" Default="" Mode="" Description="Container Variable: SONARR_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sonarr API KEY" Target="SONARR_APIKEY" Default="" Mode="" Description="Container Variable: SONARR_APIKEY" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sonarr Port" Target="SONARR_PORT" Default="" Mode="" Description="Container Variable: SONARR_PORT" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sonarr URL Base" Target="SONARR_URLBASE" Default="" Mode="" Description="Container Variable: SONARR_URLBASE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr SSL (http or https)" Target="SONARR_SSL" Default="true" Mode="" Description="Container Variable: SONARR_SSL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sonarr Username" Target="SONARR_USERNAME" Default="" Mode="" Description="Container Variable: SONARR_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr Password" Target="SONARR_PASSWORD" Default="" Mode="" Description="Container Variable: SONARR_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Default Folder for Media" Target="DEFAULTS_ROOT_FOLDER" Default="" Mode="" Description="Container Variable: DEFAULTS_ROOT_FOLDER" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Default Profile ID" Target="DEFAULTS_PROFILE_ID" Default="" Mode="" Description="Container Variable: DEFAULTS_PROFILE_ID" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config Directory" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sonarr-telegram-bot</Config>
+</Container>
